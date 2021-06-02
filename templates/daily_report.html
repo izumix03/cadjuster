@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="form-floating">
+        <textarea
+                class="form-control"
+                id="floatingTextarea"
+        >●本日作業
+{{ today_titles }}
+
+●気づきなど
+・
+
+●直近業務予定
+{{ next_workday_titles }}
+
+●雑談
+・</textarea>
+        <label for="floatingTextarea">日報フォーマット</label>
+    </div>
+{% endblock %}
